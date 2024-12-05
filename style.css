@@ -1,0 +1,184 @@
+@font-face {
+    font-family:"Bang" ;
+    src: url(font/Bangers-Regular.ttf);
+}
+
+@font-face {
+    font-family:"DM" ;
+    src: url(font/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+body{
+    padding-top: 94px;
+}
+
+header{
+    position: fixed;
+   
+    z-index: 1000;
+    top: 0;
+    width: 1535px;
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    
+    border-bottom:2px solid black;
+    padding-left: 150px;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+header p{
+    font-family: "Bang";
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    font-family: "Dm";
+    font-size: 15px;
+}
+
+.menu{
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 120px;
+    padding-left: 750px;
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(190, 188, 188, 0.673);
+    font-family: "Dm";
+    justify-content: space-between;
+    width: 100px;
+    border: 0.5px solid rgba(194, 193, 193, 0.76);
+    border-radius: 30px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.banner{
+    height: 405px;
+}
+
+.quadrinho{
+    display: flex;
+    flex-direction: row;
+    margin: 68px 22px;
+
+}
+
+.hqs img{
+    height: 290px;
+}
+
+.faixa{
+    background-color: #83C456;
+    font-size: 20px;
+    font-family: "Dm"
+    ;
+    color: white;
+    font-weight: 500;
+    padding-left: 20px;
+    margin-bottom: 69px;
+}
+
+.detalhes{
+    font-size: 15px;
+    font-family: "Dm";
+  
+    
+}
+
+.titulo{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.titulo, .del, .preco{
+    padding-left: 20px;
+}
+
+.del{
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.preco{
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 15px;
+}
+.hqs{
+    padding: 0px 100px;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bannerdois{
+    height: 298px;
+}
+
+#dc{
+    background-color: #2E87D2;
+}
+
+#marvel{
+    background-color: #D10000;
+}
+.itens img{
+    height: 360px;
+}
+
+.itens p{
+    font-size: 20px;
+    font-family: "Dm";
+    font-weight: 600;
+}
+
+.cole{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.itens{
+    margin: 60px;
+}
+
+footer{
+    padding: 90px 170px;
+    border-top: 0.5px solid black;
+    border-bottom: 25px solid #1A315F;
+}
+
+footer p{
+    font-size: 25px;
+    font-family: "Bang";
+}
+
+footer input{
+    border-bottom: 0.8px solid black;
+    margin-top: 50px;
+    width: 350px;
+}

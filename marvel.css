@@ -1,0 +1,119 @@
+@font-face {
+    font-family:"Bang" ;
+    src: url(font/Bangers-Regular.ttf);
+}
+
+@font-face {
+    font-family:"DM" ;
+    src: url(font/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+
+body{
+    padding-top: 94px;
+}
+
+header{
+    position: fixed;
+   
+    z-index: 1000;
+    top: 0;
+    width: 1535px;
+    display: flex;
+    flex-direction: row;
+   
+    align-items: center;
+    
+    border-bottom:2px solid black;
+    padding-left: 150px;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+header p{
+    font-family: "Bang";
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    font-family: "Dm";
+    font-size: 15px;
+}
+
+.menu{
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 120px;
+    padding-left: 750px;
+}
+
+.barra{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(190, 188, 188, 0.673);
+    font-family: "Dm";
+    justify-content: space-between;
+    width: 100px;
+    border: 0.5px solid rgba(194, 193, 193, 0.76);
+    border-radius: 30px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.banner{
+    height: 305px;
+}
+
+.itens img{
+    height: 340px;
+}
+
+.itens p{
+    font-size: 20px;
+    font-family: "Dm";
+    font-weight: 600;
+}
+
+.cole{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.itens{
+    margin: 60px
+    20px;
+}
+
+footer{
+    padding: 90px 170px;
+    border-top: 0.5px solid black;
+    border-bottom: 25px solid #1A315F;
+    margin-top: 80px;
+}
+
+footer p{
+    font-size: 25px;
+    font-family: "Bang";
+}
+
+footer input{
+    border-bottom: 0.8px solid black;
+    margin-top: 50px;
+    width: 350px;
+}
