@@ -117,3 +117,34 @@ footer input{
     margin-top: 50px;
     width: 350px;
 }
+
+/* Estilo da faixa de promoções */
+.promo-banner {
+    background-color: #851919; /* Cor de fundo, pode ser personalizada */
+    color: white; /* Cor do texto */
+    font-family: "Dm", sans-serif;
+    font-size: 18px; /* Tamanho do texto */
+    font-weight: 300;
+    padding: 10px 30px; /* Espaçamento dentro da faixa */
+    text-align: center; /* Centraliza o texto */
+    position: fixed;
+    overflow: hidden; /* Impede que o conteúdo exceda a área visível */
+    width: 1459px; /* Garante que a faixa ocupe toda a largura */
+}
+
+/* Animação para mover a frase da direita para a esquerda */
+.promo-banner p {
+    
+    animation: slide 25s linear infinite; 
+    margin: 0; 
+}
+
+/* Define a animação de deslizar */
+@keyframes slide {
+    0% {
+        transform: translateX(1519px); 
+    }
+    100% {
+        transform: translateX(-1519px); 
+    }
+}

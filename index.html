@@ -12,8 +12,18 @@
     </header>
     <main>
         <div class="banner">
-
+            <div class="carousel-container">
+                <img src="img/bannerini.png" alt="" class="carousel-slide">
+                <img src="img/ban.png" alt="" class="carousel-slide">
+                <img src="img/bannerpro.png" alt="" class="carousel-slide">
+            </div>
+            <div class="carousel-indicators">
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
         </div>
+       
 
         <div class="hqs"> 
             <div class="quadrinho"><img src="img/nov.png" alt=""> <div class="detalhes"> <div class="faixa">New</div> <p class="titulo">Supergirl: Mulher <br>Do Amanhã</p> <p class="del">DC <br>
@@ -52,7 +62,7 @@
     </div>
  
     <div class="bannerdois">
-
+<img src="img/bannercole.png" alt="">
     </div>
 
     <div class="cole" id="colecionaveis">
@@ -100,6 +110,51 @@
         <p>Se inscreva na nossa newsletter</p>
         <input type="text">
     </footer>
+<script >
+    let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const totalSlides = slides.length;
+const indicators = document.querySelectorAll('.indicator');
+let goingForward = true; // Variável para controlar a direção
 
+
+function moveSlide() {
+    if (goingForward) {
+        currentIndex++;
+        if (currentIndex === totalSlides ) {
+            goingForward = false; r
+        }
+    } else {
+        currentIndex--;
+        if (currentIndex === 0) {
+            goingForward = true; 
+        }
+    }
+    updateCarousel();
+}
+
+// Função para atualizar a posição do carrossel e a barra de navegação
+function updateCarousel() {
+    const carouselContainer = document.querySelector('.carousel-container');
+    const offset = -currentIndex * 100; // Move as imagens no eixo X
+    carouselContainer.style.transform = `translateX(${offset}%)`;
+
+    // Atualiza a barra de navegação
+    indicators.forEach((indicator, index) => {
+        if (index === currentIndex) {
+            indicator.classList.add('active');
+        } else {
+            indicator.classList.remove('active');
+        }
+    });
+}
+
+// Define um intervalo para a mudança automática de imagens
+setInterval(moveSlide, 5000); // Muda a imagem a cada 3 segundos
+
+// Inicializa o carrossel
+updateCarousel();
+
+</script>
 </body>
 </html>
